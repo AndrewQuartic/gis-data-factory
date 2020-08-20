@@ -68,6 +68,26 @@
 					"timeout": "7.00:00:00",
 					"sleep": 10
 				}
+			},
+			{
+				"name": "Login",
+				"type": "WebActivity",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"url": {
+						"value": "@https://account.api.here.com/oauth2/token?grant_type=client_credentials&oauth_consumer_key=vDYdIF6pJgHFe4fzqDDc&oauth_nonce=rand()&oauth_signature_method=HMAC-SHA256&oauth_timestamp=utcnow()&oauth_version=1.0",
+						"type": "Expression"
+					},
+					"method": "POST"
+				}
 			}
 		],
 		"annotations": []
