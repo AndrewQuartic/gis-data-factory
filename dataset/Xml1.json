@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "input.xml",
+				"fileName": "test.json",
 				"folderPath": "testinput",
 				"container": "test"
 			}
