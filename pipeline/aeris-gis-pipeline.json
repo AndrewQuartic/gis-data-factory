@@ -24,9 +24,13 @@
 						"requestMethod": "GET"
 					},
 					"sink": {
-						"type": "BinarySink",
+						"type": "JsonSink",
 						"storeSettings": {
 							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings",
+							"quoteAllText": true
 						}
 					},
 					"enableStaging": false
@@ -39,7 +43,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "Binary1",
+						"referenceName": "Json1",
 						"type": "DatasetReference"
 					}
 				]
