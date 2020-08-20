@@ -20,7 +20,7 @@
 					"method": "GET",
 					"datasets": [
 						{
-							"referenceName": "Xml1",
+							"referenceName": "Json1",
 							"type": "DatasetReference"
 						}
 					]
