@@ -23,27 +23,11 @@
 						"requestInterval": "00.00:00:00.010",
 						"requestMethod": "GET"
 					},
-					"sink": {
-						"type": "JsonSink",
-						"storeSettings": {
-							"type": "AzureBlobStorageWriteSettings"
-						},
-						"formatSettings": {
-							"type": "JsonWriteSettings",
-							"quoteAllText": true
-						}
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "RestResource2",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "Json1",
 						"type": "DatasetReference"
 					}
 				]
@@ -70,7 +54,7 @@
 				}
 			},
 			{
-				"name": "Login",
+				"name": "Web1",
 				"type": "WebActivity",
 				"dependsOn": [],
 				"policy": {
@@ -82,15 +66,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": {
-						"value": "https://account.api.here.com/oauth2/token?grant_type=client_credentials&oauth_consumer_key=vDYdIF6pJgHFe4fzqDDc&oauth_nonce=@rand()&oauth_signature_method=HMAC-SHA256&oauth_timestamp=@utcnow()&oauth_version=1.0",
-						"type": "Expression"
-					},
-					"method": "POST",
-					"headers": {
-						"Content-Type": "application/x-www-form-urlencoded"
-					},
-					"body": " "
+					"url": "https://traffic.ls.hereapi.com/traffic/6.3/incidents/xml/8/134/86?apiKey=7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI",
+					"method": "GET"
 				}
 			}
 		],
