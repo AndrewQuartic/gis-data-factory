@@ -87,7 +87,7 @@
 						"type": "Expression"
 					},
 					"method": "POST",
-					"body": " "
+					"body": "grant_type=client_credentials"
 				}
 			}
 		],
