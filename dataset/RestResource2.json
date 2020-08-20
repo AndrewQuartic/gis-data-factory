@@ -6,13 +6,9 @@
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
-			"app_id": {
+			"apiKey": {
 				"type": "string",
-				"defaultValue": "RVIwGtQ71HomDZ5Nint8"
-			},
-			"app_code": {
-				"type": "string",
-				"defaultValue": "ZlU6TOlFTXsOR2sdAGK4RThf-YU6qlXhceI0rJ5ww04"
+				"defaultValue": "7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI"
 			},
 			"c": {
 				"type": "string",
