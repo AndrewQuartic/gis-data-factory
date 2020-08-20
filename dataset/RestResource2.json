@@ -5,6 +5,19 @@
 			"referenceName": "TrafficIncidents",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"app_id": {
+				"type": "string",
+				"defaultValue": "vDYdIF6pJgHFe4fzqDDc"
+			},
+			"app_code": {
+				"type": "string"
+			},
+			"c": {
+				"type": "string",
+				"defaultValue": "US"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
