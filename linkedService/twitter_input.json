@@ -1,15 +1,13 @@
 {
 	"name": "twitter_input",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "RestService",
 		"typeProperties": {
 			"url": "https://stream.twitter.com/1.1/statuses/filter.json",
 			"enableServerCertificateValidation": true,
-			"authenticationType": "Basic",
-			"userName": "H1cb3ixYCsMOICVeK15bJU7n7",
-			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkFaVVJFR0lTREFUQUZBQ1RPUlkwMDAxX2JlYWVhOTk2LTE2ZWMtNDc2Ni1hNDNkLTVjYzM5OWMwYzYwNSINCn0="
+			"authenticationType": "Anonymous"
 		}
-	}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
 }
