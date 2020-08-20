@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "twittertest01",
+				"fileName": "test",
 				"folderPath": "test",
 				"container": "test"
 			}
