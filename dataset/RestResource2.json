@@ -11,7 +11,8 @@
 				"defaultValue": "vDYdIF6pJgHFe4fzqDDc"
 			},
 			"app_code": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI"
 			},
 			"c": {
 				"type": "string",
