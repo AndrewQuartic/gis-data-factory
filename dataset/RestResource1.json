@@ -5,6 +5,11 @@
 			"referenceName": "twitter_input",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"authorization": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
