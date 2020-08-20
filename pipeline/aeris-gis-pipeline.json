@@ -21,7 +21,10 @@
 						"type": "RestSource",
 						"httpRequestTimeout": "00:01:40",
 						"requestInterval": "00.00:00:00.010",
-						"requestMethod": "GET"
+						"requestMethod": "GET",
+						"additionalHeaders": {
+							"authorization": "Bearer AAAAAAAAAAAAAAAAAAAAAMbGGwEAAAAAUJqCNNjKUN9dFLlvrpQz0IrN7IQ%3DhWrQ3eyMQbG4PEBR4pNSjgN5L0nw0AP4WT1Qm10jtA4rovCIZV"
+						}
 					},
 					"sink": {
 						"type": "JsonSink",
