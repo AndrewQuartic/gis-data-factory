@@ -1,0 +1,12 @@
+{
+	"name": "TrafficIncidents",
+	"properties": {
+		"annotations": [],
+		"type": "RestService",
+		"typeProperties": {
+			"url": "https://traffic.ls.hereapi.com/traffic/6.3/incidents/xml/8/134/86",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
