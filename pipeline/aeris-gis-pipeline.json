@@ -1,0 +1,7 @@
+{
+	"name": "aeris-gis-pipeline",
+	"properties": {
+		"description": "Pipeline for importing aeris weather data",
+		"annotations": []
+	}
+}
