@@ -1,0 +1,12 @@
+{
+	"name": "HereApiConnector",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://traffic.ls.hereapi.com/traffic/6.3/incidents/xml/8/134/86?apiKey=7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
