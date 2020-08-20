@@ -5,16 +5,6 @@
 			"referenceName": "TrafficIncidents",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"apiKey": {
-				"type": "string",
-				"defaultValue": "7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI"
-			},
-			"c": {
-				"type": "string",
-				"defaultValue": "US"
-			}
-		},
 		"annotations": [],
 		"type": "RestResource",
 		"schema": []
