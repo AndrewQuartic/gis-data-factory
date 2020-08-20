@@ -4,26 +4,6 @@
 		"description": "Pipeline for importing aeris weather data",
 		"activities": [
 			{
-				"name": "Web1",
-				"type": "WebActivity",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"url": "https://traffic.ls.hereapi.com/traffic/6.3/incidents/xml/8/134/86?apiKey=7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI",
-					"method": "GET",
-					"headers": {
-						"Accept": "application/xml"
-					}
-				}
-			},
-			{
 				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
@@ -37,10 +17,15 @@
 				"userProperties": [],
 				"typeProperties": {
 					"source": {
-						"type": "RestSource",
-						"httpRequestTimeout": "00:01:40",
-						"requestInterval": "00.00:00:00.010",
-						"requestMethod": "GET"
+						"type": "XmlSource",
+						"storeSettings": {
+							"type": "HttpReadSettings",
+							"requestMethod": "GET"
+						},
+						"formatSettings": {
+							"type": "XmlReadSettings",
+							"validationMode": "none"
+						}
 					},
 					"sink": {
 						"type": "JsonSink",
@@ -56,7 +41,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "RestResource3",
+						"referenceName": "Xml2",
 						"type": "DatasetReference"
 					}
 				],
