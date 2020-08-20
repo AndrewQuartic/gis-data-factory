@@ -38,11 +38,7 @@
 				"inputs": [
 					{
 						"referenceName": "RestResource2",
-						"type": "DatasetReference",
-						"parameters": {
-							"apiKey": "7Aj75U5H0JLT2VHs2cKWqsWrfmFKZBwEzweyJ6TPmmI",
-							"c": "US"
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
