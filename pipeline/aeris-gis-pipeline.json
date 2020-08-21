@@ -136,16 +136,6 @@
 								"sink": {
 									"path": "LONG"
 								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['GEOLOC']['TO']['LATITUDE']"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['GEOLOC']['TO']['LONGITUDE']"
-								}
 							}
 						],
 						"collectionReference": "$['TRAFFICML_INCIDENTS']['TRAFFIC_ITEMS']['TRAFFIC_ITEM']"
