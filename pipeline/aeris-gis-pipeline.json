@@ -33,17 +33,213 @@
 							"quoteAllText": true
 						}
 					},
-					"enableStaging": false
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['type']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['type']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['id']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['geometry']['type']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['geometry']['coordinates'][0]"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['OBJECTID']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['IncidentName']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['IncidentTypeCategory']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['UniqueFireIdentifier']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['DailyAcres']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['CalculatedAcres']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['PercentContained']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['ICS209ReportDateTime']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['FireDiscoveryDateTime']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['DiscoveryAcres']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['POOCounty']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['POOState']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['FireCause']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['FireCauseGeneral']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['GACC']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['TotalIncidentPersonnel']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['IncidentManagementOrganization']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['FireMgmtComplexity']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['ResidencesDestroyed']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['OtherStructuresDestroyed']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['Injuries']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['Fatalities']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['PredominantFuelGroup']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['PredominantFuelModel']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['PrimaryFuelModel']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['ContainmentDateTime']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['ControlDateTime']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['FinalAcres']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['IsValid']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['FireOutDateTime']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['ModifiedOnDateTime']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['IncidentTypeKind']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['IrwinID']"
+								}
+							},
+							{
+								"source": {
+									"path": "$['features'][0]['properties']['GlobalID']"
+								}
+							}
+						],
+						"collectionReference": ""
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "RestResource4",
-						"type": "DatasetReference",
-						"parameters": {
-							"where": "1=1",
-							"f": "pgeojson",
-							"outFields": "*"
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
