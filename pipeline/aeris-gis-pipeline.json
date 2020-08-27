@@ -4,7 +4,8 @@
 		"description": "Pipeline for importing aeris weather data",
 		"activities": [
 			{
-				"name": "CopyTrafficData",
+				"name": "CopyWildfireData",
+				"description": "Activity for retrieving wildfire features from ArcGIS Living Atlas.",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -32,114 +33,17 @@
 							"quoteAllText": true
 						}
 					},
-					"enableStaging": false,
-					"translator": {
-						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"path": "['TRAFFIC_ITEM_ID']"
-								},
-								"sink": {
-									"path": "TRAFFIC_ITEM_ID"
-								}
-							},
-							{
-								"source": {
-									"path": "['TRAFFIC_ITEM_STATUS_SHORT_DESC']"
-								},
-								"sink": {
-									"path": "TRAFFIC_STATUS_SHORT_DESC"
-								}
-							},
-							{
-								"source": {
-									"path": "['TRAFFIC_ITEM_TYPE_DESC']"
-								},
-								"sink": {
-									"path": "TRAFFIC_ITEM_TYPE_DESC"
-								}
-							},
-							{
-								"source": {
-									"path": "['START_TIME']"
-								},
-								"sink": {
-									"path": "START_TIME"
-								}
-							},
-							{
-								"source": {
-									"path": "['END_TIME']"
-								},
-								"sink": {
-									"path": "END_TIME"
-								}
-							},
-							{
-								"source": {
-									"path": "['ENTRY_TIME']"
-								},
-								"sink": {
-									"path": "ENTRY_TIME"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['INTERSECTION']['ORIGIN']['STREET1']['ADDRESS1']"
-								},
-								"sink": {
-									"path": "ADDRESS1"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['INTERSECTION']['ORIGIN']['STREET2']['ADDRESS1']"
-								},
-								"sink": {
-									"path": "ADDRESS2"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['INTERSECTION']['ORIGIN']['COUNTY']"
-								},
-								"sink": {
-									"path": "COUNTY"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['INTERSECTION']['ORIGIN']['STATE']"
-								},
-								"sink": {
-									"path": "STATE"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['GEOLOC']['ORIGIN']['LATITUDE']"
-								},
-								"sink": {
-									"path": "LAT"
-								}
-							},
-							{
-								"source": {
-									"path": "['LOCATION']['GEOLOC']['ORIGIN']['LONGITUDE']"
-								},
-								"sink": {
-									"path": "LONG"
-								}
-							}
-						],
-						"collectionReference": "$['TRAFFICML_INCIDENTS']['TRAFFIC_ITEMS']['TRAFFIC_ITEM']"
-					}
+					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "RestResource3",
-						"type": "DatasetReference"
+						"referenceName": "RestResource4",
+						"type": "DatasetReference",
+						"parameters": {
+							"where": "1=1",
+							"f": "pgeojson",
+							"outFields": "*"
+						}
 					}
 				],
 				"outputs": [
