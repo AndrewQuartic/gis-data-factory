@@ -9,6 +9,14 @@
 			"where": {
 				"type": "string",
 				"defaultValue": "1=1"
+			},
+			"f": {
+				"type": "string",
+				"defaultValue": "pgeojson"
+			},
+			"outFields": {
+				"type": "string",
+				"defaultValue": "*"
 			}
 		},
 		"annotations": [],
